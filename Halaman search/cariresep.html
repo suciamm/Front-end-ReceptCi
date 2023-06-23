@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEARCH</title>
+    <link rel="stylesheet" href="cariresep.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="../pict/cook1.png" alt="icon program"></a>
+        <nav class="navbar">
+            <a href="../Halaman utama/tampilan-awal.html">PENCARIAN</a>
+        </nav>
+        <div class="icons">
+            <img src="../pict/cook1.png" alt="icon navbar" class="gbr">
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="meal-wrapper">
+            <div class="meal-search">
+                <h2 class="title">find meal for your ingredients</h2>
+            <blockquote>Real food does't have ingredients, real food is ingredients.
+                <br><cite>-suci amanah-</cite>
+            </blockquote>
+
+            <!-- KOTAK PENCARIAN -->
+            <div class="meal-search-box">
+                <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+                <button type="submit" class="search-btn btn" id="search-btn">
+                    <img src="../pict/search.png" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="meal-result">
+            <h2 class="title">your search result</h2><hr>
+            <div id="meal"></div>
+        </div>
+        <div class="meal-details">
+
+            <!-- RECEPT CLOSE BUTTON -->
+            <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                <img src="../pict/x.png" alt="">
+            </button>
+
+            <!-- MEAL CONTTENT -->
+            <div class="meal-details-content"></div>
+        </div>
+        </div>
+    </main>
+
+    <script src="cariresep.js"></script>
+</body>
+</html>

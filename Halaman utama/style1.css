@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0; 
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    background: rgb(185, 148, 148);
+}
+
+/* STYLE BUAT NAVBARNYA */
+header{
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    position: sticky;
+    top:0;
+    z-index: 100000;
+    outline: none;
+    transition: all .2s linear;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: radial-gradient(rgb(252, 230, 230), rgb(229, 143, 143));
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 10px 0 10px black;
+}
+header .sub{
+    display: flex;
+    gap: 50px;
+}
+header .sub a{
+    text-decoration: none;
+    margin: 10px;
+}
+header .sub a h2{
+    margin-left: -55px;
+}
+header .logo img{
+    height: 55PX;
+    width: 55px;
+    border-radius: 50%;
+    justify-items: center;
+}
+header .navbar a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    color: rgb(190, 112, 9);
+    border: .1rem solid transparent;
+}
+header .navbar a:hover{
+    color: red;
+    border: 2px solid rgb(255, 255, 255);
+}
+header .icons img{
+    cursor:pointer;
+    margin-left: .5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 10px;
+    padding: 1px;
+    color: solid black;
+    height: 40PX;
+    width: 60px;
+    border-radius: 50%;
+}
+header .icons img:hover{
+    transform: rotate(360deg);
+    background: rgb(231, 65, 65);
+}
+header .icons #menu{
+    display: none;
+}
+header h2{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin-left: -135px;
+    font-family: Over the Rainbow;
+}
+
+
+/* SLIDESHOW */
+:root{
+    font-size: 10px;
+}
+.judul-artikel{
+    justify-content: center;
+    text-align: center;
+    padding: 100px;
+    margin-top: 25px;
+    font-size: 30px;
+    background-image: linear-gradient(-22deg, white 0%, rgb(177, 177, 177) 100%);
+}
+.container2{
+    width: 100%;
+    display: flex;
+    padding: 0 5px;
+    overflow: hidden;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.slide{
+    height: 50vh;
+    border-radius: 20px;
+    margin: 5px 5px 5px;
+    cursor: pointer;
+    color: white;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    transition: all 0.7s ease-in-out;
+    filter: blur(4px);
+
+
+}
+.slide h3{
+    position: absolute;
+    font-size: clamp(1rem, 5vw, 5rem);
+    bottom: 20px;
+    left: 20px;
+    margin: 20px;
+    opacity: 0;
+    background-color: tomato;
+    background-image: linear-gradient(-22deg, white 0%, white 100%);
+    -webkit-background-clip:text;
+    background-clip: text;
+}
+#gbr4{
+    background-image: url(../pict/food9.jpeg);
+}
+#gbr5{
+    background-image: url(../pict/food6.jpeg);
+}
+#gbr6{
+    background-image: url(../pict/food7.jpeg);
+}
+#gbr7{
+    background-image: url(../pict/food11.jpeg);
+}
+#gbr8{
+    background-image: url(../pict/food12.jpeg);
+}
+#gbr9{
+    background-image: url(../pict/food13.jpeg);
+}
+.slide.active{
+    flex: 5;
+    filter: blur(0px);
+}
+.slide.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in0.4s;
+}
+
+/* CSS MAIN */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #bdbcbc, #f6f6f6);  
+    justify-content: center;
+    font-size: 15px;
+}
+.gbr{
+    width: 400px;
+    height: 500px;
+    margin-top: 30px;
+    margin-right: -50px;
+    border-radius: 5%;
+}
+
+.kutipan{
+    border: 5px rgb(199, 174, 174);
+    color: rgb(0, 0, 0);
+    width: 25%;
+    padding: 20px 50px;
+    gap: 10px;
+    font-family: 'Edu VIC WA NT Beginner', cursive, 'Times New Roman', Times, serif;
+    text-align:justify;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.6),
+    -10px -10px 10px rgba(0,0,0, 0.6);
+    margin: 100px auto;
+    font-weight: normal;
+}
+main .kutipan span{
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+}
+
+/* CSS FOOTER */
+footer{
+    background-color: rgb(229, 143, 143);
+    box-shadow: 0 3px 10px rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+    width: 100%;
+}
+.sosmed img{
+    height: 30px;
+    border-radius: 70%;
+}
+.sosmed ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+.sosmed li{
+    display: inline-block;
+    /* text-size: 30px; */
+    padding: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1300px){
+    .kutipan{
+        display: flex;
+        flex-wrap: wrap;
+        width: 200px;
+        margin-bottom: -30px;
+        background: linear-gradient(to right, #bdbcbc, #f6f6f6);  
+
+    }
+    main{
+        margin-bottom: 10px;
+    }
+    footer{
+        margin-top: 50px;
+    }
+
+}
+
+@media(max-width:1050px){
+    .kutipan{
+        display: flex;
+        flex-wrap: wrap;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+    .judul-artikel{
+        font-size: 25px;
+    }
+  
+}
+@media(max-width:940px){
+    .kutipan{
+        display: flex;
+        flex-wrap: wrap;
+        width: 600px;
+    }
+}
+@media (max-width: 50rem){
+    .container2{
+        display: flex;
+        height: 90vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .slide{
+        width: 90vw;
+        border-radius: 20px;
+        margin: 10px;
+        position: relative;
+        
+    }
+}
+@media(max-width:900px){
+    .kutipan{
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+    }
+}
+@media(max-width:800px){
+    header .icons #menu{
+        display: inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgb(209, 107, 107);
+        border-top: .1rem solid rgb(10, 10, 10);
+        border-bottom: .1rem solid rgb(0, 0, 0);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: rgb(90, 51, 51);
+    }
+}
+@media (max-width: 768px){
+
+    .judul-artikel{
+        font-size: 20px;
+        padding: 50px;
+        margin-top: 100px;
+    }
+    .kutipan{
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+    }
+}
+@media(max-width:600px){
+    .judul-artikel{
+        margin-top: 30px;
+        font-size: 17px;
+    }
+    .kutipan{
+        width: 300px;
+        font-size: 13px;
+    }
+    .judul-artikel{
+        padding: 50px;
+        margin-top: 100px;
+        font-size: 17px;
+    }
+    
+}
+@media(max-width:460px){
+    .kutipan{
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
+        font-size: 10px;
+        justify-content: center;
+    }
+    header .sub a h2{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    header .logo img{
+        height: 60PX;
+        width: 60px;
+    }
+    header .icons img{
+        height: 30px;
+        width: 40px;
+    }
+
+}
+@media(max-width:378px){
+    header .sub a h2{
+        margin-top: 10px;
+        font-size: 23px;
+        margin-top: 5px;
+    }
+    header{
+        display: block;
+    }
+    .judul-artikel{
+        padding: 50px;
+        margin-top: 200px;
+        font-size: 15px;
+    }
+    header .icons img{
+        display: flex;
+        margin: 10px;
+    }
+}
